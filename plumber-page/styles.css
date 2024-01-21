@@ -1,0 +1,281 @@
+/* Reset some default styles _______________________________________________________________________________________________________________________________*/
+@font-face {
+    font-family: 'navbarmenu';
+    src: url(../fonts/45light.otf);
+
+}
+
+@font-face {
+    font-family: '93ext';
+    src: url(../fonts/93extended.ttf);
+
+}
+
+@font-face {
+    font-family: '63ext';
+    src: url(../fonts/63exteneded.ttf);
+}
+
+@font-face {
+    font-family: 'akira';
+    src: url(../fonts/Akira.otf);
+}
+
+body {
+    background-color: black;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'navbarmenu', sans-serif;
+
+}
+
+h1 {
+    margin: 0px;
+}
+
+
+/* Navbar Styles ______________________________________________________________________________________________________________________________________ */
+header {
+    background-color: #373737;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+
+    width : 150px;
+    height : auto;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    font-family: 'navbarmenu';
+}
+
+
+
+/* Call Now Bar Styles ____________________________________________________________________________________________________________________________________*/
+.call-now-bar {
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+    padding: 5px ;
+}
+
+.call-now-bar p {
+    margin: 3px;
+    font-family: '63ext', sans-serif;
+    font-size: 1.2vw;
+    letter-spacing: 0.3vw;
+}
+
+/* Consult Styles _________________________________________________________________________________________________________________________________________*/
+.consult-container{
+    margin-bottom: 5%;
+    background-color: #111111;
+    padding-bottom: 3%;
+}
+
+.consult {
+    color: #fff;
+    text-align: center;
+}
+
+.consult p {
+    font-family: '93ext', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: -15px;
+}
+
+.consult a#service-name {
+    background: linear-gradient(to right, #f32170, #ff6b08, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.consult h1 {
+    font-family: 'akira';
+    font-size: 7vw;
+    line-height: 6vw;
+    letter-spacing: 0.08rem;
+    text-align: left;
+    padding: 2%;
+    margin-left: 8%;
+}
+.consult h3 {
+    font-family: 'navbarmenu', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.08rem;
+    text-align: center;
+    margin: 35px;
+}
+
+.consult button {
+    background-color: #0179fa;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+
+}
+
+.cta-button a#number-button {
+    letter-spacing: 0.2rem;
+    font-family: '93ext';
+    font-size: 3.4vw;
+    color: white;
+    text-decoration: none;
+}
+
+.button-container{
+    display: flex;
+    margin-left: 10%;
+}
+
+
+/* about section ______________________________________*/
+
+.row-container {
+    background-color: black;
+    display: flex;
+
+  }
+
+.row {
+    box-sizing: border-box;
+}
+  
+.item-1 {
+    flex: 0 0 45%;
+    display: flex;
+    align-items: center;
+    font-family: 'akira';
+    padding-left: 10%;
+    padding-right: 3%;
+    font-size: 2vw;
+  }
+
+.item-2{
+    flex: 0 0 55%;
+    display: flex;
+    align-items: center;
+    font-family: '63ext';
+    font-size: 1.8vw;
+    padding-right: 10%;
+  }
+
+.foot-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.line-divider{
+    background-color: white;
+    margin-right: 30px;
+    width: 100%;
+    height: 2px;
+}
+
+.foot-container img {
+    margin-right: 25px;
+    width : 150px;
+    height : auto;
+
+}
+
+
+
+/* about us Styles ________________________________________________________________________________________________________________________________________*/
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        margin: 0 auto; /* Center the logo */
+        display: block;
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    /*___________________________________________________*/
+    .call-now-bar p{
+        font-size: 2.2vw;
+    }
+
+    .consult h1{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        font-size: 9vw;
+        line-height: 10vw;
+        margin-left: 5%;
+    }
+
+    .button-container{
+        margin-left: 7%;
+        padding-bottom: 5%;
+    }
+
+    .cta-button a1{
+        font-size: 4vw;
+        letter-spacing: 0.3vw;
+    }
+
+    .consult button {
+        padding: 4% 6%;
+    }
+
+    /*___________________________________________________*/
+
+    .row-container {
+        flex-direction: column; /* Stack items vertically in mobile version */
+    }
+    
+    
+    .item-1 {
+        flex: 0 0 100%; /* Take full width in mobile version */
+        padding-left: 8%;
+        padding-right: 70%;
+        font-size: 3vw;
+    }
+    
+    .item-2 {
+        flex: 0 0 100%; /* Take full width in mobile version */
+        padding-left: 8%;
+        font-size: 3.5vw;
+
+    }
+
+    .foot-container img {
+        width: 85px;
+    }
+    
+}

@@ -1,0 +1,512 @@
+/* Reset some default styles _______________________________________________________________________________________________________________________________*/
+@font-face {
+    font-family: 'navbarmenu';
+    src: url(fonts/45light.otf);
+
+}
+
+@font-face {
+    font-family: '93ext';
+    src: url(fonts/93extended.ttf);
+
+}
+
+@font-face {
+    font-family: '63ext';
+    src: url(fonts/63exteneded.ttf);
+}
+
+@font-face {
+    src: url(fonts/Akira.otf);
+    font-family: akira;
+}
+
+body {
+    background-color: #111111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'navbarmenu', sans-serif;
+
+}
+
+h1 {
+    margin: 0px;
+}
+
+
+/* Navbar Styles ______________________________________________________________________________________________________________________________________ */
+header {
+    background-color: #373737;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+
+    width : 150px;
+    height : auto;
+}
+
+.menu {
+    display: none;
+}
+
+.menu li {
+    margin-right: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    font-family: 'navbarmenu';
+}
+
+/* Adjust styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Call Now Bar Styles ____________________________________________________________________________________________________________________________________*/
+.call-now-bar {
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+    padding: 5px ;
+}
+
+.call-now-bar p {
+    margin: 3px;
+    font-family: '63ext', sans-serif;
+    font-size: 0.5rem;
+    letter-spacing: 0.1rem;
+}
+
+/* Consult Styles _________________________________________________________________________________________________________________________________________*/
+.consult-container{
+    margin-bottom: 10%;
+}
+
+.consult {
+    color: #fff;
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+.consult a#service-name {
+    font-family: 'akira';
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: -15px;
+    background: linear-gradient(to right, #f32170, #ff6b08, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+.consult h3 {
+    font-family: 'navbarmenu', sans-serif;
+    font-size: 3vw;
+    letter-spacing: 0.08rem;
+    text-align: center;
+    margin: 5%;
+}
+
+.consult button {
+    background-color: #0179fa;
+    color: #ffffff;
+    font-family: 'akira';
+    letter-spacing: 1vw;
+    padding: 15px 30px;
+    font-size: 4vw;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px #adcaff;
+
+}
+
+.consult button:active {
+  box-shadow: 0 0 #adcaff;
+  transform: translateY(4px);
+}
+
+.cta-button a{
+    color: #cacaca;
+    text-decoration: none;
+}
+
+
+/* UI Card Styles ________________________________________________________________________________________________________________________________________*/
+.ui-card-container {
+    background-color: black;
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center; /* Align cards vertically in the middle */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+    padding: 2%;
+
+}
+
+.ui-card {
+    width: 47%;
+    background-color: #373737;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+}
+
+.ui-card img {
+    width: calc(100% - 8px); /* Adjust the width to leave a 5px margin on both sides */
+    height: auto;
+    border-radius: 6px; /* Half of the border-radius of the parent .ui-card */
+    margin: 4px; /* 5px margin from top, left, right */
+}
+.card-content {
+    padding: 5px;
+    margin-top: 0px;
+    margin-left: 4%;
+    margin-bottom: 6%;
+}
+
+.card-content h1 {
+    font-family: 'akira';
+    letter-spacing: 0.6vw;
+    font-size: 3vw;
+
+}
+
+.card-content p {
+
+    font-family: '63ext';
+    font-size: 0.63rem;
+    margin-bottom: 12px;
+    line-height: 2;
+}
+
+.cta-button {
+    background-color: #027aff;
+    color: #cacaca;
+    font-family: '93ext';
+    padding: 10px 10px;
+    padding-bottom: 8px;
+    font-size: 0.7rem;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+.cta-button:hover {
+    background-color: #212121;
+}
+
+/* about us Styles ________________________________________________________________________________________________________________________________________*/
+
+.about-container{
+    background-color: rgb(10, 10, 10);
+    display: grid;
+    padding: 50px;
+    text-align: center;
+}
+
+.about-card h1{
+    font-family: '93ext';
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+}
+
+.about-content-card {
+    font-family: '63ext';
+    line-height: 20px;
+    margin: 2%;
+}
+
+.foot-container{
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line-divider{
+    background-color: white;
+    margin-right: 30px;
+    width: 100%;
+    height: 2px;
+}
+
+.foot-container img {
+    margin-right: 25px;
+    width : 90px;
+    height : auto;
+
+}
+
+
+
+/* about us Styles ________________________________________________________________________________________________________________________________________*/
+
+@media only screen and (min-width: 768px) {
+
+
+body {
+    background-color: #111111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'navbarmenu', sans-serif;
+
+}
+
+h1 {
+    margin: 0px;
+}
+
+
+/* Navbar Styles ______________________________________________________________________________________________________________________________________ */
+header {
+    background-color: #373737;
+    color: #fff;
+    padding: 10px 20px;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    margin-left: 60px;
+    width : 150px;
+    height : auto;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin-right: 50px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    font-family: 'navbarmenu';
+}
+
+/* Adjust styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Call Now Bar Styles ____________________________________________________________________________________________________________________________________*/
+.call-now-bar {
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+    padding: 5px ;
+}
+
+.call-now-bar p {
+    margin: 8px;
+    font-family: '63ext', sans-serif;
+    letter-spacing: 5px;
+    font-size: 1rem;
+}
+
+/* Consult Styles _________________________________________________________________________________________________________________________________________*/
+.consult-container{
+    margin-bottom: 50px;
+}
+
+.consult {
+    color: #fff;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.consult p {
+    font-family: 'akira';
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: -15px;
+}
+
+.consult h3 {
+    font-family: 'navbarmenu', sans-serif;
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 3%;
+    padding: 0% 17%;
+}
+
+.consult button {
+    background-color: #0179fa;
+    color: white;
+    font-family: 'akira';
+    letter-spacing: 0.5vw;
+    padding: 25px 60px;
+    font-size: 2.5vw;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+
+/* UI Card Styles ________________________________________________________________________________________________________________________________________*/
+.ui-card-container {
+    background-color: black;
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center; /* Align cards vertically in the middle */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.ui-card {
+    width: 350px;
+    background-color: #373737;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.ui-card img {
+    width: calc(100% - 15px); /* Adjust the width to leave a 5px margin on both sides */
+    height: auto;
+    border-radius: 15px; /* Half of the border-radius of the parent .ui-card */
+    margin: 7px; /* 5px margin from top, left, right */
+}
+.card-content {
+    padding: 5px;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.card-content h1 {
+    font-family: 'akira';
+    letter-spacing: 0.3vw;
+    font-size: 1.6vw;
+
+}
+
+.card-content p {
+
+    font-family: 'navbarmenu';
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.cta-button {
+    background-color: #027aff;
+    color: #cacaca;
+    font-family: '63ext';
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #212121;
+}
+
+/* about us Styles ________________________________________________________________________________________________________________________________________*/
+
+.about-container{
+    background-color: rgb(10, 10, 10);
+    display: grid;
+    padding: 50px;
+    text-align: center;
+}
+
+.about-card h1{
+    font-family: '93ext';
+    letter-spacing: 4px;
+    font-size: 1.5em;
+}
+
+.about-content-card {
+    font-family: '63ext';
+    line-height: 35px;
+    padding-left: 22%;
+    padding-right: 22%;
+    margin: 20px;
+}
+
+.foot-container{
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line-divider{
+    background-color: white;
+    margin-right: 50px;
+    width: 100%;
+    height: 2px;
+}
+
+.foot-container img {
+    margin-right: 60px;
+    width : 150px;
+    height : auto;
+
+}
+}
